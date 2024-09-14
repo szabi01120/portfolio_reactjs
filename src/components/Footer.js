@@ -1,55 +1,75 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
+  const location = useLocation();
+  const isMainPage = location.pathname === "/";
+
   return (
     <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SzH.</h3>
-        </Col>
-        <Col />
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/szabi01120"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/szabi01120/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/szabolcshajnal/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
+      <Row style={{ minHeight: '50px' }} className="d-flex align-items-center">
+        {isMainPage ? (
+          <>
+            <Col md="4" />
+            <Col
+              md="4"
+              className="footer-copywright d-flex justify-content-center align-items-center"
+            >
+              <h3>Copyright © {year} SzH.</h3>
+            </Col>
+            <Col md="4" />
+          </>
+        ) : (
+          <>
+            <Col
+              md="4"
+              className="footer-copywright d-flex justify-content-center align-items-center"
+            >
+              <h3>Copyright © {year} SzH.</h3>
+            </Col>
+            <Col md="4" />
+            <Col md="3" className="footer-icons d-flex justify-content-end">
+              <ul className="footer-icons list-inline">
+                <li className="social-icons list-inline-item">
+                  <a
+                    href="https://github.com/szabi01120"
+                    style={{ color: "white" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillGithub />
+                  </a>
+                </li>
+                <li className="social-icons list-inline-item">
+                  <a
+                    href="https://www.linkedin.com/in/szabi01120/"
+                    style={{ color: "white" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </li>
+                <li className="social-icons list-inline-item">
+                  <a
+                    href="https://www.instagram.com/szabolcshajnal/"
+                    style={{ color: "white" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillInstagram />
+                  </a>
+                </li>
+              </ul>
+            </Col>
+          </>
+        )}
       </Row>
     </Container>
   );
