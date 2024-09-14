@@ -11,12 +11,12 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Szabolcs Hajnal </span>
             from <span className="purple"> Debrecen, Hungary.</span>
             <br />
-            I am currently employed as a Data Analyst at DataExpert Kft.
+            I am currently employed as a <span className="purple">Data Analyst</span> at <span className="purple">DataExpert Kft</span>.
             <br />
 
           </p>
           <p style={{ textAlign: "left" }}>
-            I am a graduate student at the University of Debrecen, Faculty of Informatics.
+            I am a graduate student at the <span className="purple">University of Debrecen, Faculty of Informatics</span>.
             <br />
             <br />
             Apart from coding, some other activities that I love to do:
