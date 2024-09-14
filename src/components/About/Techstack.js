@@ -5,16 +5,15 @@ import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
   DiPython,
   DiGit,
 } from "react-icons/di";
 import {
   SiRedis,
-  SiFirebase,
   SiMysql,
   SiVuedotjs,
   SiPandas,
+  SiVercel,
 } from "react-icons/si";
 
 function Techstack() {
@@ -49,6 +48,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedis />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVercel />
       </Col>
     </Row>
   );
