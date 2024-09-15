@@ -34,7 +34,10 @@ function Footer() {
               <h3>Copyright © {year} SzH.</h3>
             </Col>
             <Col md="4" />
-            <Col md="3" className="footer-icons d-flex justify-content-end">
+            <Col
+              md="3"
+              className="footer-icons d-flex justify-content-md-end justify-content-center" // Telefonon középre igazít, gépen jobbra
+            >
               <ul className="footer-icons list-inline">
                 <li className="social-icons list-inline-item">
                   <a
