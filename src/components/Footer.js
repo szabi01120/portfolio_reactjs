@@ -13,13 +13,13 @@ function Footer() {
 
   return (
     <Container fluid className="footer">
-      <Row style={{ minHeight: '50px' }} className="d-flex align-items-center">
+      <Row style={{ minHeight: "50px" }} className="d-flex align-items-center">
         {isMainPage ? (
           <>
             <Col md="4" />
             <Col
               md="4"
-              className="footer-copywright d-flex justify-content-center align-items-center"
+              className="footer-copywright no-padding d-flex justify-content-center align-items-center"
             >
               <h3>Copyright © {year} SzH.</h3>
             </Col>
