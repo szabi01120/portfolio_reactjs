@@ -17,7 +17,7 @@ function Projects() {
 
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I have been working on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -25,7 +25,7 @@ function Projects() {
               imgPath={reg_system}
               isBlog={false}
               title="University thesis work"
-              description="An individual business registration system through a web application. This is my thesis work for university graduation. The system is developed using Python - Flask for backend and React.js for frontend. The system is designed to help the business registration process easier and faster."
+              description="An individual business registration system through a web application. This is my thesis work for university graduation. The system is developed using Python - Flask for backend and React.js for frontend. It is designed to make the business registration process easier and faster."
               ghLink="https://github.com/szabi01120/szakdolgozat_python"
             />
           </Col>
@@ -35,7 +35,7 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with React.js, Material-UI, and Firebase. It has features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
               ghLink="https://github.com/soumyajit4419/Chatify"
             />
           </Col>
@@ -45,7 +45,7 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace and thus helping in sucide prevention."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
             />
           </Col>
