@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import reg_system from "../../Assets/Projects/reg_system.png";
 import hb_comp from "../../Assets/Projects/hb_comp.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import discord from "../../Assets/Projects/discord.png";
 import suicide from "../../Assets/Projects/suicide.png";
 
 function Projects() {
@@ -32,11 +32,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={discord}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with React.js, Material-UI, and Firebase. It has features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              title="Always Typing on Discord"
+              description="A small project to make Discord always typing. This is a Python script that sends a typing status to the Discord server every 10 seconds. This way, the user is always typing, even if they are not typing anything."
+              ghLink="https://github.com/szabi01120/DiscordAlwaysType-python"
             />
           </Col>
 
