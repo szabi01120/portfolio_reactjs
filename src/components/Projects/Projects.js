@@ -6,6 +6,8 @@ import reg_system from "../../Assets/Projects/reg_system.png";
 import hb_comp from "../../Assets/Projects/hb_comp.png";
 import discord from "../../Assets/Projects/discord.png";
 import suicide from "../../Assets/Projects/suicide.png";
+import truckdriver from "../../Assets/Projects/truckdriver.png";
+import rkp from "../../Assets/Projects/rkp.png";
 
 function Projects() {
   return (
@@ -37,6 +39,26 @@ function Projects() {
               title="Always Typing on Discord"
               description="A small project to make Discord always typing. This is a Python script that sends a typing status to the Discord server every 10 seconds. This way, the user is always typing, even if they are not typing anything."
               ghLink="https://github.com/szabi01120/DiscordAlwaysType-python"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={truckdriver}
+              isBlog={false}
+              title="Truck Driver Registration System"
+              description="This is a truck driver registration system that we had to create for a university course. We worked as a team, and there were four of us in the group."
+              ghLink="https://github.com/szabi01120/autoszerelo_beadando"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={rkp}
+              isBlog={false}
+              title="Low-level programming assignment"
+              description="This is a large project that I had to complete for one of my university courses. It’s a low-level programming assignment written in C. It is very complex."
+              ghLink="https://github.com/szabi01120/RKP_4_BEADANDO"
             />
           </Col>
 
