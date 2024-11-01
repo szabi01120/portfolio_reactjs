@@ -51,7 +51,7 @@ function Footer() {
                 </li>
                 <li className="social-icons list-inline-item">
                   <a
-                    href="https://www.linkedin.com/in/szabi01120/"
+                    href="https://www.linkedin.com/in/szabolcs-hajnal-3b3958328/"
                     style={{ color: "white" }}
                     target="_blank"
                     rel="noopener noreferrer"
